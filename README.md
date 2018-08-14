@@ -8,6 +8,6 @@ Additionally, each of the scripts in the scripts directory defines the neccessar
 
 In general the scripts should be run in the following order:
 generate.star.index.sh will build the geneome directory in the refs, using the comprehensive annotation and the reference genome.
-Then the cutadapt.sh will be use to trim the 3' and 5' adapters from the fastq file (note that the miRNA-seq protocol uses 7 different set of 5' adapters and the cutadapt script needs to be adjusted accordingly, you may find the sequences in refs/adapters)
+Then the cutadapt.sh will be use to trim the 3' and 5' adapters from the fastq file (note that the miRNA-seq protocol uses 7 different set of 5' adapters and the cutadapt script needs to be adjusted accordingly, you may find the sequences in refs/miRNA_5prime_adaptors_barcode.txt)
 
 finally, the star.sh script will run on the trim fastq and generate the counts, bam and wig files in the result directory.
